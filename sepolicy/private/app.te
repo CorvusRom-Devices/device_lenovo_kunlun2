@@ -2,3 +2,9 @@
 get_prop(appdomain, vendor_camera_prop)
 
 get_prop(appdomain, vendor_default_prop)
+
+allow untrusted_app theme_prop:file { read };
+allow untrusted_app_29 theme_prop:file { read };
+allow system_app sysfs_battery_supply:dir { search };
+
+
