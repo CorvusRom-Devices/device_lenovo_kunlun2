@@ -72,6 +72,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # WiFi Display
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.enable_hwc_vds=1 \
+    persist.debug.wfd.enable=0 \
     persist.vendor.radio.atfwd.start=false
 
 # Zygote
