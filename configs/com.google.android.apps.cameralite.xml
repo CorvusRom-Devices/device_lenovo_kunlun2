@@ -12,7 +12,7 @@
 -->
 
 <permissions>
-    <privapp-permissions package="org.codeaurora.snapcam">
+    <privapp-permissions package="com.google.android.apps.cameralite">
         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
         <permission name="android.permission.ACCESS_NETWORK_STATE"/>
