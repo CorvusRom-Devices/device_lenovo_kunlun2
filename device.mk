@@ -162,3 +162,8 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
+
+#Priv-app perms
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/com.google.android.carrier.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.carrier.xml \
+    $(LOCAL_PATH)/configs/livedisplay.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/livedisplay.xml
