@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2019 The PixelExperience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,10 +14,19 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libplatformconfig
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_SHARED_LIBRARY)
+# Pixel Experience targets
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Inherit some common Lineage stuff
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
+
+# Device identifier. This must come after all inclusions.
+PRODUCT_NAME := corvus_kunlun2
+PRODUCT_BRAND := lenovo
+PRODUCT_DEVICE := kunlun2
+PRODUCT_MANUFACTURER := lenovo
+PRODUCT_MODEL := Lenovo K10 Note
+
+PRODUCT_GMS_CLIENTID_BASE := android-lenovo
