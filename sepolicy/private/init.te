@@ -7,3 +7,10 @@ allow init vendor_configs_file:file mounton;
 
 # Allow init to mount vendor overlay
 allow init vendor_overlay_file:dir mounton;
+
+allow init self:netlink_generic_socket read;
+
+allow init sysfs:file rw_file_perms;
+allow init sysfs_tp:file setattr;
+
+allow init vendor_file:file execute;

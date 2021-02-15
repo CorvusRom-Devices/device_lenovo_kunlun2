@@ -2,3 +2,21 @@ type qti_init_shell, domain;
 
 allow qti_init_shell sysfs_io_sched_tuneable:file w_file_perms;
 dontaudit qti_init_shell self:capability { dac_override dac_read_search };
+
+allow qti_init_shell configfs:dir create_dir_perms;
+allow qti_init_shell configfs:file create_file_perms;
+allow qti_init_shell configfs:lnk_file create_file_perms;
+
+allow qti_init_shell persist_file:lnk_file read;
+
+allow qti_init_shell sensors_persist_file:fifo_file create_file_perms;
+
+allow qti_init_shell shell_exec:file rx_file_perms;
+
+allow qti_init_shell sysfs:file setattr;
+allow qti_init_shell sysfs_leds:file setattr;
+
+allow qti_init_shell toolbox_exec:file rx_file_perms;
+allow qti_init_shell vendor_file:file entrypoint;
+
+get_prop(qti_init_shell, default_prop)

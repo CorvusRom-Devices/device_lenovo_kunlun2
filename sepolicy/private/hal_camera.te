@@ -1,0 +1,2 @@
+get_prop(hal_camera, system_prop)
+get_prop(hal_camera, default_prop)

@@ -1,1 +1,8 @@
+allow hal_audio diag_device:chr_file rw_file_perms;
+
+allow hal_audio sysfs:dir read;
+
 allow hal_audio hal_power_pixel:binder call;
+
+get_prop(hal_audio, default_prop)
+get_prop(hal_audio, audio_prop)
