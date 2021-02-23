@@ -166,4 +166,9 @@ PRODUCT_PACKAGES += \
 #Priv-app perms
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.google.android.carrier.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.carrier.xml \
-    $(LOCAL_PATH)/configs/livedisplay.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/livedisplay.xml
+    $(LOCAL_PATH)/configs/livedisplay.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/livedisplay.xml \
+    vendor/gms/common/proprietary/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
+    vendor/gms/common/proprietary/product/etc/permissions/privapp-permissions-google-p.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-p.xml \
+    vendor/gms/common/proprietary/product/etc/permissions/split-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/split-permissions-google.xml \
+    vendor/gms/common/proprietary/system_ext/etc/permissions/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se.xml
+
