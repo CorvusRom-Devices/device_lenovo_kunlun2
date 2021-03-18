@@ -121,3 +121,6 @@ TARGET_OTA_ASSERT_DEVICE := jd2019,kunlun2,zap
 
 # Display
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
+
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
