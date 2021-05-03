@@ -78,9 +78,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
 
-# Wave Maintainer
+# Corvus Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.wave.maintainer=Victor
+    ro.corvus.maintainer=Victor
 
 # Color control
 PRODUCT_PROPERTY_OVERRIDES += \

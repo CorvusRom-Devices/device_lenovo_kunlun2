@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-wave
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-corvus
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -134,7 +134,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    packages/apps/CameraGo
 
 # System properties
 -include $(LOCAL_PATH)/product_prop.mk

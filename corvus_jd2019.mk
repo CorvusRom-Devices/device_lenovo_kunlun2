@@ -19,11 +19,11 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Bootanimation targets
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit some common WaveOS stuff
-$(call inherit-product, vendor/wave/configs/common.mk)
+# Inherit some common CorvusOS stuff
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := wave_jd2019
+PRODUCT_NAME := corvus_jd2019
 PRODUCT_BRAND := Lenovo
 PRODUCT_DEVICE := jd2019
 PRODUCT_MANUFACTURER := Lenovo
