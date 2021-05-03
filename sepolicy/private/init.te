@@ -19,3 +19,6 @@ allow init sysfs_msm_power:file { write };
 allow init sysfs_mmc_host:file { write };
 
 allow init vendor_file:file execute;
+
+# Allow init to write to sysfs_battery_supply
+allow init sysfs_battery_supply:file { setattr };

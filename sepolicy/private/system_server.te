@@ -2,4 +2,7 @@ allow system_server hal_power_pixel:binder call;
 allow system_server vendor_persist_camera_prop:file { read open getattr };
 allow system_server sysfs:file read;
 
+#Smart charging
+allow system_server sysfs_battery_supply:file { getattr open read write };
+
 get_prop(system_server, vendor_camera_prop)

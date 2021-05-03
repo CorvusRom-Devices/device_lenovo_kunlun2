@@ -20,3 +20,4 @@ type proc_sysctl_schedboost, proc_type, fs_type;
 type sysfs_tp, fs_type, sysfs_type;
 type sysfs_msm_power, fs_type, sysfs_type;
 type sysfs_mmc_host, fs_type, sysfs_type;
+type sysfs_battery_supply, sysfs_type, fs_type;
