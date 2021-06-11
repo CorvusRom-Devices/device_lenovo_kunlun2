@@ -38,7 +38,6 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_PREBUILT_KERNEL := device/lenovo/jd2019/prebuilt/Image.gz-dtb
 BOARD_PREBUILT_DTBOIMAGE := device/lenovo/jd2019/prebuilt/dtbo.img
-BOARD_KERNEL_SEPARATED_DTBO := true
 
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
