@@ -1,6 +1,6 @@
 BOARD_VENDOR := lenovo
 
-DEVICE_PATH := device/lenovo/jd2019
+DEVICE_PATH := device/lenovo/kunlun2
 
 # Architecture
 TARGET_ARCH := arm64
@@ -30,14 +30,18 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := sdm710
 
 # Kernel
+TARGET_KERNEL_CONFIG := kunlun2_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xA90000 androidboot.hardware=qcom androidboot.console=ttyMSM0 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 service_locator.enable=1 androidboot.configfs=true androidboot.usbcontroller=a600000.dwc3 swiotlb=1 loop.max_part=7
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_PREBUILT_KERNEL := device/lenovo/jd2019/prebuilt/Image.gz-dtb
-BOARD_PREBUILT_DTBOIMAGE := device/lenovo/jd2019/prebuilt/dtbo.img
+BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_SOURCE := kernel/lenovo/kunlun2
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_VERSION := 4.9
 
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
@@ -95,6 +99,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 include device/qcom/sepolicy/SEPolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 SELINUX_IGNORE_NEVERALLOWS := true
+SELINUX_IGNORE_NEVERALLOWS_ON_USER := true
 
 # Treble
 BOARD_VNDK_VERSION := current
@@ -112,11 +117,11 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_jd2019
-TARGET_RECOVERY_DEVICE_MODULES := libinit_jd2019
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_kunlun2
+TARGET_RECOVERY_DEVICE_MODULES := libinit_kunlun2
 
 # OTA Asserts
-TARGET_OTA_ASSERT_DEVICE := jd2019,kunlun2,zap
+TARGET_OTA_ASSERT_DEVICE := kunlun2,jd2019,zap
 
 # Display
 TARGET_HAS_WIDE_COLOR_DISPLAY := true

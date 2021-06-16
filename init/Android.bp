@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_jd2019",
+    name: "libinit_kunlun2",
     recovery_available: true,
-    srcs: ["init_jd2019.cpp"],
+    srcs: ["init_kunlun2.cpp"],
     include_dirs: [
         "system/core/base/include",
         "system/core/init"

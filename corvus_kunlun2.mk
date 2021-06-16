@@ -23,10 +23,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := corvus_jd2019
+PRODUCT_NAME := corvus_kunlun2
 PRODUCT_BRAND := Lenovo
-PRODUCT_DEVICE := jd2019
+PRODUCT_DEVICE := kunlun2
 PRODUCT_MANUFACTURER := Lenovo
-PRODUCT_MODEL := L78071
+PRODUCT_MODEL := L38111
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo

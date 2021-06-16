@@ -47,4 +47,5 @@ void vendor_load_properties() {
     property_override("ro.oem_unlock_supported", "0");
     property_override("debug.stagefright.omx_default_rank.sw-audio", " ");
     property_override("debug.stagefright.omx_default_rank", " ");
+    property_override("ro.control_privapp_permissions", "log");
 }

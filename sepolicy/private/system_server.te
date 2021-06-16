@@ -6,3 +6,6 @@ allow system_server sysfs:file read;
 allow system_server sysfs_battery_supply:file { getattr open read write };
 
 get_prop(system_server, vendor_camera_prop)
+
+# App Lock
+add_service(system_server, applock_service); 
