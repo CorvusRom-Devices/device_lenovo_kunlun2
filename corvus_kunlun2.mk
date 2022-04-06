@@ -20,13 +20,17 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_kunlun2
+PRODUCT_NAME := corvus_kunlun2
 PRODUCT_BRAND := lenovo
 PRODUCT_DEVICE := kunlun2
 PRODUCT_MANUFACTURER := lenovo
 PRODUCT_MODEL := Lenovo Z6 Lite
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
+
+RAVEN_LAIR := Official
+TARGET_INCLUDE_PIXEL_CHARGER := true
+CORVUS_MAINTAINER := victor10520
