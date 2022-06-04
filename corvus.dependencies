@@ -2,11 +2,11 @@
    {
       "repository": "device_lenovo_sdm710-common",
       "target_path": "device/lenovo/sdm710-common",
-      "branch": "12"
+      "branch": "12L"
    },
    {
       "repository":  "vendor_lenovo_kunlun2",
       "target_path": "vendor/lenovo/kunlun2",
-      "branch": "12"
+      "branch": "12L"
    }
 ]
